@@ -1,16 +1,21 @@
 :root {
+    /* Background color */
+    --background-color: white;
+    /* Button height and width */
     --button-width: 20vmin;
-    --button-spacing: 5vmin;
 }
 
+/* Div object that holds tictactoe buttons */
 .board-grid {
     display: grid;
     grid-template-columns: var(--button-width) var(--button-width) var(--button-width);
+    grid-template-rows: var(--button-width) var(--button-width) var(--button-width);
 
-    column-gap: var(--button-spacing);
+    gap: 0;
 }
 
+/* Tictactoe buttons! */
 .ttt-button {
-    height: var(--button-width);
-    margin-top: var(--button-spacing);
+    background-color: transparent;
+    border: 3px solid black;
 }
