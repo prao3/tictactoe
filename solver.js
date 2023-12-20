@@ -101,14 +101,14 @@ class Solver{
           copy.move(i, j);
           let score = this.__alphabeta(copy, alpha, beta, !maximizing);
           if(maximizing){
-            bestScore = max(score, bestScore);
+            bestScore = Math.max(score, bestScore);
             //Set alpha in here
-            alpha = max(alpha, bestScore);
+            alpha = Math.max(alpha, bestScore);
           }
           else{
-            bestScore = min(score, bestScore);
+            bestScore = Math.min(score, bestScore);
             //Set beta in here
-            beta = min(beta, bestScore);
+            beta = Math.min(beta, bestScore);
           }
           //Check alpha-beta here
           if(alpha >= beta){
@@ -180,10 +180,10 @@ class Solver{
           copy.move(i, j);
           let score = this.__minimax(copy, !maximizing);
           if(maximizing){
-            bestScore = max(score, bestScore);
+            bestScore = Math.max(score, bestScore);
           }
           else{
-            bestScore = min(score, bestScore);
+            bestScore = Math.min(score, bestScore);
           }
         }
       }

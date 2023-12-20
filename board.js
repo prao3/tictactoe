@@ -137,7 +137,7 @@ class Board{
   A function to play a move at the given coordinates
   */
   move(i, j){
-    let turn = this.numMoves % players.length;
+    let turn = this.numMoves % this.players.length;
     //If we can play the move, play it
     if(this.position[i][j] === 0){
       this.position[i][j] = this.players[turn];
