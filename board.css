@@ -1,6 +1,16 @@
+:root {
+    --button-width: 20vmin;
+    --button-spacing: 5vmin;
+}
+
 .board-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: var(--button-width) var(--button-width) var(--button-width);
 
-    column-gap: 5vw;
+    column-gap: var(--button-spacing);
+}
+
+.ttt-button {
+    height: var(--button-width);
+    margin-top: var(--button-spacing);
 }
