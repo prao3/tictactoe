@@ -18,4 +18,8 @@
 .ttt-button {
     background-color: transparent;
     border: 3px solid black;
+
+    font-size: 6em;
+    font-weight: bolder;
+    font-family: Tahoma;
 }
